@@ -1,0 +1,121 @@
+*{
+    margin: 0px;
+    padding: 0%;
+}
+
+body{
+    background: rgb(230, 230, 230);
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+}
+
+.contenedor{
+    width: 95%;
+    /* max-width: 1000px; ancho máximo de la página */
+    margin: 5px auto; /*auto permite centrar nuestra página en forma horizontal*/
+    display: grid;
+    gap: 20px; /*nos ahorramos tenes que poner márgenes entre los elementos*/
+
+    /*3 columnas: contenido (con 2 widgets) + sidebar*/
+    grid-template-columns: repeat(3,1fr);
+
+    /*4 filas: header, contenido, widgets, footer*/
+    grid-template-rows: repeat(5, auto);
+
+    grid-template-areas: "encabezado menu menu"
+                         "presenta_1 presenta_1 presenta_1"
+                         "presenta_2 presenta_2 presenta_2"
+                         "cabañas entorno contacto"
+                         "pie pie pie";
+}
+
+.contenedor .encabezado{
+    background: rgb(255, 255, 255);
+    color: #000;
+    grid-area: encabezado; 
+    padding: 10px;
+    text-align: center;
+}
+
+.contenedor .menu{
+    background: rgb(255, 255, 255);
+    color: #000;
+    grid-area: menu; 
+    padding: 10px;
+    text-align: center;
+}
+
+
+.contenedor .presenta_1{
+    background: rgb(214, 88, 88);
+    color: #000;
+    grid-area: presenta_1; 
+    padding: 10px;
+    text-align: center;
+}
+
+.contenedor .presenta_2{
+    background: rgb(237, 194, 194);
+    color: #000;
+    grid-area: presenta_2; 
+    padding: 10px;
+    text-align: center;
+}
+
+.contenedor .cabañas{
+    background: rgb(141, 237, 143);
+    color: #000;
+    grid-area: cabañas; 
+    padding: 10px;
+    text-align: center;
+}
+
+.contenedor .entorno{
+    background: rgb(141, 237, 143);
+    color: #000;
+    grid-area: entorno; 
+    padding: 10px;
+    text-align: center;
+}
+
+.contenedor .contacto{
+    background: rgb(141, 237, 143);
+    color: #000;
+    grid-area: contacto;
+    padding: 10px;
+    text-align: center;
+}
+
+.contenedor .pie{
+    background: rgb(101, 217, 241);
+    color: #000;
+    grid-area: pie; 
+    padding: 10px;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 768px){
+    .contenedor{
+        grid-template-areas: "encabezado encabezado encabezado"
+                             "menu menu menu"
+                             "presenta_1 presenta_1 presenta_1"
+                             "presenta_2 presenta_2 presenta_2"
+                             "cabañas entorno contacto"
+                             "pie pie pie";
+    }
+}
+
+@media screen and (max-width: 450px){
+    .contenedor{
+        grid-template-areas: "encabezado encabezado encabezado"
+                             "menu menu menu"
+                             "presenta_1 presenta_1 presenta_1"
+                             "presenta_2 presenta_2 presenta_2"
+                             "cabañas cabañas cabañas"
+                             "entorno entorno entorno"
+                             "contacto contacto contacto"
+                             "pie pie pie";
+    }
+}
+
