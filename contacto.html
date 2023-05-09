@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,6 +10,7 @@
     <title>Colibrí Cabañas</title>
 
 </head>
+
 <body>
     <div class="contenedor_contacto">
         <header class="encabezado">
@@ -17,7 +19,7 @@
 
         <div class="menu">
             <h2>Menu principal:</h1>
-            <h1>Inicio - Cabañas - Entorno - Contacto</h1>
+                <h1>Inicio - Cabañas - Entorno - Contacto</h1>
         </div>
 
         <main class="presenta_1">
@@ -26,26 +28,52 @@
 
         </main>
 
-        <div class="formulario">
-            <h2>Aqui va el texto formulario de contacto</h2>
-            <br>
-            <p>Nombre:___________________________</p>
-            <p>e-mail:___________________________</p>
-            <p>Telefono:_________________________</p>
-            <p>Fecha Ingreso:__________</p>
-            <p>Fecha Salida:___________</p>
-            <p>Cantidad de pasajeros:_____</p>
-            <p>Comentarios________________________</p>
-            <p>____________________________________</p>
-            <p>____________________________________</p>
-            <p>____________________________________</p>
-            <p>____________________________________</p>
-            <br><br>
-        </div>
+        <form id="miFormulario">
+            <div class="campo">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" required>
+            </div>
+
+            <div class="campo">
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+            </div>
+
+            <div class="campo">
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" required>
+            </div>
+
+            <div class="campo">
+                <label for="fechaIngreso">Fecha de ingreso:</label>
+                <input type="date" id="fechaIngreso" required>
+            </div>
+
+            <div class="campo">
+                <label for="fechaSalida">Fecha de salida:</label>
+                <input type="date" id="fechaSalida" required>
+            </div>
+
+            <div class="campo">
+                <label for="pasajeros">Pasajeros:</label>
+                <input type="number" id="pasajeros" required>
+            </div>
+
+            <div class="campo">
+                <label for="comentarios">Comentarios:</label>
+                <textarea id="comentarios" rows="4"></textarea>
+            </div>
+
+            <input type="submit" value="Enviar">
+        </form>
+
 
         <div class="mapa">
             <h3>Aqui van el mapa de google con la ubicacion</h3>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4142.690721399876!2d-64.55676197422336!3d-31.977085085033753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95d2b0447c2bd5ff%3A0x3245f2bd7c030f4c!2sPlaza%20Jose%20Hernandez!5e0!3m2!1ses-419!2sar!4v1683492719676!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4142.690721399876!2d-64.55676197422336!3d-31.977085085033753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95d2b0447c2bd5ff%3A0x3245f2bd7c030f4c!2sPlaza%20Jose%20Hernandez!5e0!3m2!1ses-419!2sar!4v1683492719676!5m2!1ses-419!2sar"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
 
 
@@ -53,6 +81,7 @@
             <h3>FOOTER</h3>
         </footer>
     </div>
-    
+
 </body>
+
 </html>
