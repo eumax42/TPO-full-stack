@@ -9,6 +9,7 @@
     <!-- Carga el icono del menu hamburguesa para pantallas chicas -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/contacto.css">
+    <script src="https://kit.fontawesome.com/8cf5f64ee2.js" crossorigin="anonymous"></script>
     <title>Colibrí Cabañas</title>
 
 </head>
@@ -26,55 +27,97 @@
         </div>
 
         <main class="presenta_1">
-            <h2>Aqui van fotos del predio</h2>
-            <img src="images/Hab-suite.jpg" alt="Habitación">
+            <h1>Consulta Tarifas y Disponibilidad</h1>
+            <img src="images/Captura.JPG" alt="Habitación" width="100%">
 
         </main>
 
-        <form id="miFormulario">
-            <div class="campo">
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" required>
-            </div>
+        <div class="formulario">
+            <h1>Contacto</h1>
+            <br>
+            <form action="">
 
-            <div class="campo">
-                <label for="email">Email:</label>
-                <input type="email" id="email" required>
-            </div>
+                <!-- Nombre -->
+                <div class="campo">
+                    <label for="nombre"></label>
+                    <input type="text" name="nombre" id="nombre" placeholder="NOMBRE" required>
+                </div>
+                <br>
 
-            <div class="campo">
-                <label for="telefono">Teléfono:</label>
-                <input type="tel" id="telefono" required>
-            </div>
+                <!-- mail -->
+                <div class="campo">
+                    <label for=" email"></label>
+                    <input type="email" name="email" id="email" placeholder="EMAIL" required>
+                </div>
+                <br>
 
-            <div class="campo">
-                <label for="fechaIngreso">Fecha de ingreso:</label>
-                <input type="date" id="fechaIngreso" required>
-            </div>
+                <!-- telefono -->
+                <div class="campo">
+                    <label for="Telefono"></label>
+                    <input type="tel" name="Telefono" id="Telefono" placeholder="TELEFONO" required>
+                </div>
+                <br>
+                <!-- Fecha de Ingreso -->
+                <div class="campo">
+                    <label for="fechaIngreso">Fecha de ingreso:</label>
+                    <input type="date" id="fechaIngreso" required>
+                </div>
+                <br>
+                <!-- Fecha de Salida -->
+                <div class="campo">
+                    <label for="fechaSalida">Fecha de salida:</label>
+                    <input type="date" id="fechaSalida" required>
+                </div>
+                <br>
 
-            <div class="campo">
-                <label for="fechaSalida">Fecha de salida:</label>
-                <input type="date" id="fechaSalida" required>
-            </div>
+                <!-- comentarios -->
+                <div class="campo">
+                    <label for="comentarios">Consultas</label>
+                    <textarea name="comentarios" id="comentarios" cols="60" rows="10"></textarea>
+                </div>
 
-            <div class="campo">
-                <label for="pasajeros">Pasajeros:</label>
-                <input type="number" id="pasajeros" required>
-            </div>
+                <br>
 
-            <div class="campo">
-                <label for="comentarios">Comentarios:</label>
-                <textarea id="comentarios" rows="4"></textarea>
-            </div>
+                <input type="submit" value="Enviar Consulta">
+                <input type="reset" value="Borrar datos">
+            </form>
+        </div>
 
-            <input type="submit" value="Enviar">
-        </form>
+        <div class="ubicacion">
+            <h4 style="color:rgb(199, 155, 33)">COMO LLEGAR</h4>
+            <br>
+            <h1>La Mejor Ubicación</h1>
+            <br>
+            <br>
+            <p style="color: rgba(128, 128, 128, 0.925)">Nuestro complejo de cabañas se encuentra en San Clemente,
+                Provincia de Córdoba, a pasos de la
+                entrada principal al pueblo, en medio de una reserva natural y a los pies de la Quebrada del
+                condorito</p>
+            <br>
+            <br>
 
+
+            <a href="https://www.instagram.com/" title="Instagram" target="_blank">
+                <i class="fa-brands fa-instagram" style="font-size: 20px; color: #4e7ac6;"> Instagram</i>
+            </a>
+            <br>
+            <br>
+            <a href="https://wwww.facebook.com/" title="facebook" target="_blank">
+                <i class="fa-brands fa-facebook" style="font-size: 20px; color: #4e7ac6;"> facebook</i>
+            </a>
+            <br>
+            <br>
+            <i class="fa-brands fa-whatsapp" style="font-size: 20px ; color: #4e7ac6;"> +54 9 3547 571963</i>
+            <br>
+            <br>
+            <i class="fa-solid fa-mobile-screen-button" style="font-size: 20px ; color: #4e7ac6;"> (03547) 467383</i>
+
+        </div>
 
         <div class="mapa">
-            <h3>Aqui van el mapa de google con la ubicacion</h3>
+
             <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4142.690721399876!2d-64.55676197422336!3d-31.977085085033753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95d2b0447c2bd5ff%3A0x3245f2bd7c030f4c!2sPlaza%20Jose%20Hernandez!5e0!3m2!1ses-419!2sar!4v1683492719676!5m2!1ses-419!2sar"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2854.0472832361675!2d-64.62679744226058!3d-31.714438011825283!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x942d48d3ed8f4c67%3A0x9ae127d1709cd1d4!2sSan%20Clemente!5e0!3m2!1ses!2sar!4v1683635797541!5m2!1ses!2sar"
                 width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
@@ -89,7 +132,7 @@
     <script src="js/menu.js"></script>
     <script src="js/footer.js"></script>
     <script src="js/script.js"></script>
-    
+
 
 </body>
 

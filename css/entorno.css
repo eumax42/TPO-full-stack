@@ -1,7 +1,10 @@
 /* ----------------------------------------------------------------------------------------------- */
 /* Definimos el estilo particular de la página de Entorno */
-
-
+body{
+    background: rgb(230, 230, 230);
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+}
 
 .contenedor_entorno{
     width: 95%;
@@ -25,7 +28,7 @@
 
 
 .contenedor_entorno .encabezado{
-    background: rgb(255, 255, 255);
+    background: rgb(235, 209, 160);
     color: #000;
     grid-area: encabezado; 
     padding: 10px;
@@ -33,7 +36,7 @@
 }
 
 .contenedor_entorno .menu{
-    background: rgb(255, 255, 255);
+    background: rgb(235, 209, 160);
     color: #000;
     grid-area: menu; 
     padding: 10px;
@@ -42,7 +45,7 @@
 
 
 .contenedor_entorno .presenta_1{
-    background: rgb(214, 88, 88);
+    background: rgb(230, 240, 243);
     color: #000;
     grid-area: presenta_1; 
     padding: 10px;
@@ -50,7 +53,7 @@
 }
 
 .contenedor_entorno .presenta_2{
-    background: rgb(237, 194, 194);
+    background: rgb(202, 233, 227);
     color: #000;
     grid-area: presenta_2; 
     padding: 10px;
@@ -74,7 +77,8 @@
 }
 
 .contenedor_entorno .contacto{
-    background: rgb(141, 237, 143);
+    background: rgb(230, 240, 243);
+    color: #000;
     color: #000;
     grid-area: contacto;
     padding: 10px;
@@ -82,7 +86,7 @@
 }
 
 .contenedor_entorno .pie{
-    background: rgb(101, 217, 241);
+    background: rgb(202, 233, 227);
     color: #000;
     grid-area: pie; 
     padding: 10px;
