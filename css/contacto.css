@@ -1,7 +1,11 @@
 /* ----------------------------------------------------------------------------------------------- */
 /* Definimos el estilo particular de la página de Contacto */
 
-
+body{
+    background: rgb(230, 230, 230);
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+}
 
 .contenedor_contacto{
     width: 95%;
@@ -19,13 +23,13 @@
     grid-template-areas: "encabezado menu menu"
                          "presenta_1 presenta_1 presenta_1"
                          "formulario formulario formulario"
-                         "mapa mapa mapa"
+                         "ubicacion mapa mapa"
                          "pie pie pie";
 }
 
 
 .contenedor_contacto .encabezado{
-    background: rgb(255, 255, 255);
+    background: rgb(235, 209, 160);
     color: #000;
     grid-area: encabezado; 
     padding: 10px;
@@ -33,7 +37,7 @@
 }
 
 .contenedor_contacto .menu{
-    background: rgb(255, 255, 255);
+    background: rgb(235, 209, 160);
     color: #000;
     grid-area: menu; 
     padding: 10px;
@@ -42,15 +46,15 @@
 
 
 .contenedor_contacto .presenta_1{
-    background: rgb(214, 88, 88);
+    background: rgb(230, 240, 243);
     color: #000;
     grid-area: presenta_1; 
     padding: 10px;
-    text-align: center;
+    text-align: center; 
 }
 
 .contenedor_contacto .presenta_2{
-    background: rgb(237, 194, 194);
+    background: rgb(202, 233, 227);
     color: #000;
     grid-area: presenta_2; 
     padding: 10px;
@@ -74,39 +78,44 @@
 }
 
 .contenedor_contacto .formulario{
-    background: rgb(255, 255, 255);
+    background: rgb(202, 233, 227);
     color: #000;
     grid-area: formulario;
-    padding: 10px;
+    padding: 15px;
     text-align: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif   
 }
 
-.campo {
-    margin-bottom: 20px;
+.contenedor_contacto .ubicacion{
+    background: rgb(230, 240, 243);
+    color: #000;
+    grid-area: ubicacion;
+    padding: 20px;
+    text-align: left;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif  
+}
+
+.contenedor_contacto.campo {
+    margin-bottom: 10px;
   }
-  
   label {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
   }
-  
   input[type="text"],
   input[type="email"],
   input[type="tel"],
-  input[type="date"],
-  input[type="number"],
   textarea {
-    width: 100%;
+    width: 60%;
     padding: 5px;
-    border: 1px solid #ccc;
+    border: 1px solid #a5a9df;
     border-radius: 3px;
   }
   
-  
 
-.contenedor_contacto .mapa{
-    background: rgb(141, 237, 143);
+  .contenedor_contacto .mapa{
+    background: rgb(230, 240, 243);
     color: #000;
     grid-area: mapa;
     padding: 10px;
@@ -114,7 +123,7 @@
 }
 
 .contenedor_contacto .pie{
-    background: rgb(101, 217, 241);
+    background: rgb(202, 233, 227);
     color: #000;
     grid-area: pie; 
     padding: 10px;
@@ -128,7 +137,7 @@
                              "menu menu menu"
                              "presenta_1 presenta_1 presenta_1"
                              "formulario formulario formulario"
-                             "mapa mapa mapa"
+                             "ubicacion mapa mapa"
                              "pie pie pie";
     }
 }
@@ -139,7 +148,7 @@
                              "menu menu menu"
                              "presenta_1 presenta_1 presenta_1"
                              "formulario formulario formulario"
-                             "mapa mapa mapa"
+                             "ubicacion mapa mapa"
                              "pie pie pie";
     }
 }
