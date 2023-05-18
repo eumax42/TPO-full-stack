@@ -1,5 +1,6 @@
 /* ----------------------------------------------------------------------------------------------- */
 /* Definimos el estilo particular de la página de Contacto */
+
 body{
     background: rgb(230, 230, 230);
     color: #000;
@@ -30,7 +31,7 @@ body{
 .contenedor_contacto .encabezado{
     background: rgb(235, 209, 160);
     color: #000;
-    grid-area: menu; 
+    grid-area: encabezado; 
     padding: 10px;
     text-align: center;
 }
@@ -49,11 +50,11 @@ body{
     color: #000;
     grid-area: presenta_1; 
     padding: 10px;
-    text-align: center;
+    text-align: center; 
 }
 
 .contenedor_contacto .presenta_2{
-    background: rgb(237, 194, 194);
+    background: rgb(202, 233, 227);
     color: #000;
     grid-area: presenta_2; 
     padding: 10px;

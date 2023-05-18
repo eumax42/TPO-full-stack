@@ -25,7 +25,7 @@
 
 
 .contenedor_cabanas .encabezado{
-    background: rgb(255, 255, 255);
+    background: rgb(235, 209, 160);
     color: #000;
     grid-area: encabezado; 
     padding: 10px;
@@ -33,24 +33,23 @@
 }
 
 .contenedor_cabanas .menu{
-    background: rgb(255, 255, 255);
+    background: rgb(235, 209, 160);
     color: #000;
     grid-area: menu; 
     padding: 10px;
     text-align: center;
 }
 
-
 .contenedor_cabanas .presenta_1{
-    background: rgb(214, 88, 88);
+    background: rgb(230, 240, 243);
     color: #000;
     grid-area: presenta_1; 
     padding: 10px;
-    text-align: center;
+    text-align: center; 
 }
 
 .contenedor_cabanas .presenta_2{
-    background: rgb(237, 194, 194);
+    background: rgb(202, 233, 227);
     color: #000;
     grid-area: presenta_2; 
     padding: 10px;
@@ -74,7 +73,7 @@
 }
 
 .contenedor_cabanas .contacto{
-    background: rgb(141, 237, 143);
+    background: rgb(230, 240, 243);
     color: #000;
     grid-area: contacto;
     padding: 10px;
@@ -82,8 +81,8 @@
 }
 
 .contenedor_cabanas .pie{
-    background: rgb(101, 217, 241);
-    color: #000;
+    background: rgb(202, 233, 227);
+    color: #000;    
     grid-area: pie; 
     padding: 10px;
     text-align: center;
