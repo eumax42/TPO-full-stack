@@ -42,7 +42,9 @@ body{
     color: #000;
     grid-area: menu; 
     padding: 10px;
-    text-align:center;
+    text-align: end;
+    padding-left: 10%;
+    letter-spacing: 0.1em;
     
 }
 
