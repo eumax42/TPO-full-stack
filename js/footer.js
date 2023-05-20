@@ -1,7 +1,9 @@
+
 let footerPagina=`
-    <h3>Pie de Página</h3>
-    <br>
-    // Acá va el código del footer //
+    <img src="images/logoCabaña.png" alt="logo">
+   <br>
+
+    © Cabañas Colibrí   |   Villa General Belgrano - Córdoba
 `
 
 document.querySelector("pieDePagina").innerHTML=footerPagina;

@@ -43,9 +43,8 @@ body{
     grid-area: menu; 
     padding: 10px;
     text-align: end;
-    padding-left: 10%;
+    padding-left: 0%;
     letter-spacing: 0.1em;
-    
 }
 
 
@@ -132,7 +131,7 @@ body{
     
   }
   
-  /* Define el estilo de el exto de los links */
+  /* Define el estilo de el texto de los links */
   .topnav a {
     float: left;
     display: block;

@@ -133,6 +133,23 @@ body{
 }
 
 
+/* Start: Google Maps Responsive */
+.mapa {
+    overflow:hidden;
+    padding-bottom:400px; /*Reduce este valor si el mapa fuera muy alto, por ejemplo 250px, puedes usar porcentajes, 50%*/
+    position:relative;
+    height:100;
+}
+.mapa iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+/* End: Google Maps Responsive */
+
+
 @media screen and (max-width: 768px){
     .contenedor_contacto{
         grid-template-areas: "encabezado encabezado encabezado"
