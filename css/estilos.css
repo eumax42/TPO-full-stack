@@ -20,7 +20,7 @@ body{
     grid-template-columns: repeat(3,1fr);
 
     /*4 filas: header, contenido, widgets, footer*/
-    grid-template-rows: 85px auto auto auto auto;
+    grid-template-rows: repeat(5, auto);
 
     grid-template-areas: "encabezado menu menu"
                          "presenta_1 presenta_1 presenta_1"
@@ -50,7 +50,7 @@ body{
 
 
 .contenedor .presenta_1{
-    background: rgb(214, 88, 88);
+    background: rgb(230, 240, 243);
     color: #000;
     grid-area: presenta_1; 
     padding: 10px;
@@ -58,7 +58,7 @@ body{
 }
 
 .contenedor .presenta_2{
-    background: rgb(237, 194, 194);
+    background: rgb(202, 233, 227);
     color: #000;
     grid-area: presenta_2; 
     padding: 10px;
@@ -66,7 +66,7 @@ body{
 }
 
 .contenedor .cabañas{
-    background: rgb(141, 237, 143);
+    background: rgb(82, 183, 214);
     color: #000;
     grid-area: cabañas; 
     padding: 10px;
@@ -74,7 +74,7 @@ body{
 }
 
 .contenedor .entorno{
-    background: rgb(141, 237, 143);
+    background: rgb(82, 183, 214);
     color: #000;
     grid-area: entorno; 
     padding: 10px;
@@ -82,7 +82,7 @@ body{
 }
 
 .contenedor .contacto{
-    background: rgb(141, 237, 143);
+    background: rgb(82, 183, 214);
     color: #000;
     grid-area: contacto;
     padding: 10px;
@@ -90,7 +90,7 @@ body{
 }
 
 .contenedor .pie{
-    background: rgb(101, 217, 241);
+    background: rgb(202, 233, 227);
     color: #000;
     grid-area: pie; 
     padding: 10px;

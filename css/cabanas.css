@@ -8,7 +8,7 @@
     /* max-width: 1000px; ancho máximo de la página */
     margin: 5px auto; /*auto permite centrar nuestra página en forma horizontal*/
     display: grid;
-    gap: 20px; /*nos ahorramos tenes que poner márgenes entre los elementos*/
+    gap: 4px; /*nos ahorramos tenes que poner márgenes entre los elementos*/
 
     /*3 columnas: contenido (con 2 widgets) + sidebar*/
     grid-template-columns: repeat(3,1fr);
@@ -25,19 +25,21 @@
 
 
 .contenedor_cabanas .encabezado{
-    background: rgb(235, 209, 160);
+    background: rgb(255, 255, 255);
     color: #000;
     grid-area: encabezado; 
-    padding: 10px;
+    padding: 0px;
     text-align: center;
 }
 
 .contenedor_cabanas .menu{
-    background: rgb(235, 209, 160);
+    background: rgb(255, 255, 255);
     color: #000;
     grid-area: menu; 
     padding: 10px;
-    text-align: center;
+    text-align: end;
+    padding-left: 10%;
+    letter-spacing: 0.1em;
 }
 
 .contenedor_cabanas .presenta_1{
