@@ -1,14 +1,17 @@
 /* ----------------------------------------------------------------------------------------------- */
 /* Definimos el estilo particular de la página de Entorno */
-
-
+body{
+    background: rgb(230, 230, 230);
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+}
 
 .contenedor_entorno{
     width: 95%;
     /* max-width: 1000px; ancho máximo de la página */
     margin: 5px auto; /*auto permite centrar nuestra página en forma horizontal*/
     display: grid;
-    gap: 20px; /*nos ahorramos tenes que poner márgenes entre los elementos*/
+    gap: 4px; /*nos ahorramos tenes que poner márgenes entre los elementos*/
 
     /*3 columnas: contenido (con 2 widgets) + sidebar*/
     grid-template-columns: repeat(3,1fr);
@@ -19,7 +22,7 @@
     grid-template-areas: "encabezado menu menu"
                          "presenta_1 presenta_1 presenta_1"
                          "presenta_2 presenta_2 presenta_2"
-                         "contacto contacto contacto"
+                         "cabañas entorno contacto"
                          "pie pie pie";
 }
 
@@ -28,7 +31,7 @@
     background: rgb(255, 255, 255);
     color: #000;
     grid-area: encabezado; 
-    padding: 10px;
+    padding: 0px;
     text-align: center;
 }
 
@@ -37,12 +40,14 @@
     color: #000;
     grid-area: menu; 
     padding: 10px;
-    text-align: center;
+    text-align: end;
+    padding-left: 10%;
+    letter-spacing: 0.1em;
 }
 
 
 .contenedor_entorno .presenta_1{
-    background: rgb(214, 88, 88);
+    background: rgb(230, 240, 243);
     color: #000;
     grid-area: presenta_1; 
     padding: 10px;
@@ -50,7 +55,7 @@
 }
 
 .contenedor_entorno .presenta_2{
-    background: rgb(237, 194, 194);
+    background: rgb(202, 233, 227);
     color: #000;
     grid-area: presenta_2; 
     padding: 10px;
@@ -58,7 +63,7 @@
 }
 
 .contenedor_entorno .cabañas{
-    background: rgb(141, 237, 143);
+    background: rgb(230, 240, 243);
     color: #000;
     grid-area: cabañas; 
     padding: 10px;
@@ -66,7 +71,7 @@
 }
 
 .contenedor_entorno .entorno{
-    background: rgb(141, 237, 143);
+    background: rgb(230, 240, 243);
     color: #000;
     grid-area: entorno; 
     padding: 10px;
@@ -74,7 +79,8 @@
 }
 
 .contenedor_entorno .contacto{
-    background: rgb(141, 237, 143);
+    background: rgb(230, 240, 243);
+    color: #000;
     color: #000;
     grid-area: contacto;
     padding: 10px;
@@ -82,7 +88,7 @@
 }
 
 .contenedor_entorno .pie{
-    background: rgb(101, 217, 241);
+    background: rgb(202, 233, 227);
     color: #000;
     grid-area: pie; 
     padding: 10px;

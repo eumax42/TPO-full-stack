@@ -5,19 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/estilos.css">
+    <!-- Carga el icono del menu hamburguesa para pantallas chicas -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/cabanas.css">
     <title>Colibrí Cabañas</title>
+    <link rel="icon" href="images/Flat.png">
 
 </head>
 <body>
     <div class="contenedor_cabanas">
         <header class="encabezado">
-            <h1>Logo y nombre</h1>
+            <img src="images/logoCabaña.png" alt="logo">
         </header>
 
         <div class="menu">
-            <h2>Menu principal:</h1>
-            <h1>Inicio - Cabañas - Entorno - Contacto</h1>
+            <menuInicio></menuInicio>
+            <!-- <h2>Menu principal:</h1>
+            <h1>Inicio - Cabañas - Entorno - Contacto</h1> -->
         </div>
 
         <main class="presenta_1">
@@ -37,13 +41,20 @@
         <div class="contacto">
             <h3>Aqui van fotos y link a página de Contacto</h3>
             <img src="images/promo.jpg" alt="Contacto">
+            <br>
+            <a href="contacto.html">VER MAS</a>
         </div>
 
 
         <footer class="pie">
-            <h3>FOOTER</h3>
+            <pieDePagina></pieDePagina>
+            <!-- <h3>FOOTER</h3> -->
         </footer>
     </div>
+
+    <script src="js/menu.js"></script>
+    <script src="js/footer.js"></script>
+    <script src="js/script.js"></script>
     
 </body>
 </html>
