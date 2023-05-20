@@ -11,7 +11,7 @@ body{
     /* max-width: 1000px; ancho máximo de la página */
     margin: 5px auto; /*auto permite centrar nuestra página en forma horizontal*/
     display: grid;
-    gap: 20px; /*nos ahorramos tenes que poner márgenes entre los elementos*/
+    gap: 4px; /*nos ahorramos tenes que poner márgenes entre los elementos*/
 
     /*3 columnas: contenido (con 2 widgets) + sidebar*/
     grid-template-columns: repeat(3,1fr);
@@ -22,25 +22,27 @@ body{
     grid-template-areas: "encabezado menu menu"
                          "presenta_1 presenta_1 presenta_1"
                          "presenta_2 presenta_2 presenta_2"
-                         "contacto contacto contacto"
+                         "cabañas entorno contacto"
                          "pie pie pie";
 }
 
 
 .contenedor_entorno .encabezado{
-    background: rgb(235, 209, 160);
+    background: rgb(255, 255, 255);
     color: #000;
     grid-area: encabezado; 
-    padding: 10px;
+    padding: 0px;
     text-align: center;
 }
 
 .contenedor_entorno .menu{
-    background: rgb(235, 209, 160);
+    background: rgb(255, 255, 255);
     color: #000;
     grid-area: menu; 
     padding: 10px;
-    text-align: center;
+    text-align: end;
+    padding-left: 10%;
+    letter-spacing: 0.1em;
 }
 
 
@@ -61,7 +63,7 @@ body{
 }
 
 .contenedor_entorno .cabañas{
-    background: rgb(141, 237, 143);
+    background: rgb(230, 240, 243);
     color: #000;
     grid-area: cabañas; 
     padding: 10px;
@@ -69,7 +71,7 @@ body{
 }
 
 .contenedor_entorno .entorno{
-    background: rgb(141, 237, 143);
+    background: rgb(230, 240, 243);
     color: #000;
     grid-area: entorno; 
     padding: 10px;
