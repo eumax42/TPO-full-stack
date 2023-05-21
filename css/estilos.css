@@ -43,10 +43,9 @@ body{
     grid-area: menu; 
     padding: 10px;
     text-align: end;
-    padding-left: 0%;
+    padding-left: 10%;
     letter-spacing: 0.1em;
 }
-
 
 .contenedor .presenta_1{
     background: rgb(230, 240, 243);
