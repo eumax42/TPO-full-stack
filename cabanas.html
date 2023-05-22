@@ -12,6 +12,7 @@
     <link rel="icon" href="images/Flat.png">
     <!-- API -->
     <link rel="stylesheet" href="css/api.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
 </head>
 <body>
@@ -22,26 +23,110 @@
 
         <div class="menu">
             <menuInicio></menuInicio>
-            <!-- <h2>Menu principal:</h1>
-            <h1>Inicio - Cabañas - Entorno - Contacto</h1> -->
         </div>
 
         <main class="presenta_1">
-            <h2>Aqui van fotos de las cabañas</h2>
-            <img src="images/Hab-suite.jpg" alt="Habitación">
+            <h1>Fotos de las cabañas</h1>
+            <h5>click sobre la imagen para agrandar</h5>
+            <br>
+
+            <!-- Carrusel -->
+            <!-- Images used to open the lightbox -->
+            <div class="row">
+                <div class="column">
+                <img src="images/Cabana01.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow" style="width:100%">
+                </div>
+                <div class="column">
+                <img src="images/Cabana02.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow"style="width:100%">
+                </div>
+                <div class="column">
+                <img src="images/Cabana03.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow"style="width:100%">
+                </div>
+                <div class="column">
+                <img src="images/Cabana04.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow"style="width:100%">
+                </div>
+            </div>
+            
+            <!-- The Modal/Lightbox -->
+            <div id="myModal" class="modal">
+                <span class="close cursor" onclick="closeModal()">&times;</span>
+                <div class="modal-content">
+            
+                <div class="mySlides">
+                    <div class="numbertext">1 / 4</div>
+                    <img src="images/Cabana01.jpg" style="width:100%">
+                </div>
+            
+                <div class="mySlides">
+                    <div class="numbertext">2 / 4</div>
+                    <img src="images/Cabana02.jpg" style="width:100%">
+                </div>
+            
+                <div class="mySlides">
+                    <div class="numbertext">3 / 4</div>
+                    <img src="images/Cabana03.jpg" style="width:100%">
+                </div>
+            
+                <div class="mySlides">
+                    <div class="numbertext">4 / 4</div>
+                    <img src="images/Cabana04.jpg" style="width:100%">
+                </div>
+            
+                <!-- Next/previous controls -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            
+                <!-- Caption text -->
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
+            
+                <!-- Thumbnail image controls -->
+                <div class="column">
+                    <img class="demo" src="images/Cabana01.jpg" onclick="currentSlide(1)" alt="Dormitorio" style="width:70%">
+                </div>
+            
+                <div class="column">
+                    <img class="demo" src="images/Cabana02.jpg" onclick="currentSlide(2)" alt="Cocina" style="width:70%">
+                </div>
+            
+                <div class="column">
+                    <img class="demo" src="images/Cabana03.jpg" onclick="currentSlide(3)" alt="Baño" style="width:70%">
+                </div>
+            
+                <div class="column">
+                    <img class="demo" src="images/Cabana04.jpg" onclick="currentSlide(4)" alt="Estar" style="width:70%">
+                </div>
+                </div>
+            </div>
 
         </main>
 
         <div class="presenta_2">
-            <h2>Aqui va el texto de descripcion de las cabañas</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate voluptatibus sit quam vitae maiores impedit aut, repellendus nesciunt, odit porro nostrum. Cumque id porro fugit enim amet tempore cupiditate, autem dignissimos suscipit dolorum saepe aspernatur, laborum molestiae. Optio consequatur ex distinctio quis qui, rem consectetur placeat reprehenderit ipsum, itaque at enim sint unde. Est fugiat maiores sapiente amet. Ducimus, rem reiciendis esse soluta obcaecati eius sunt, sequi similique voluptates, deleniti mollitia magni nisi eaque? Ipsum asperiores facilis neque doloremque? Qui, reiciendis, aut illum quis dolorem eos omnis recusandae expedita facilis vitae nostrum ad, animi molestiae! Tempore sint enim ullam odio!
+            <h2>Nuestras Cabañas</h2>
+            <br>
+            <p>Nuestro complejo cuenta con 6 cabañas completamente equipadas para brindarle el máximo confor en cualquier época del año.
+            <br>
+            Cada una cuenta con las siguientes comodidades:
+            <br>
+            <dl>
+                <li>Cama matriomonial Queen</li>
+                <li>Camas individuales dependiendo de la unidad</li>
+                <li>Aire acondicionado</li>
+                <li>Calefaccion</li>
+                <li>Baño con bañera</li>
+                <li>cocina completa con utencillos</li>
+                <li>Horno Microondas</li>
+                <li>Heladera con freezer</li>
+                <li>Parrilla individual</li>
+                <li>Cochera cubierta</li>
+                <li>TV Satelital</li>
+            </dl>  
             <br><br>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem libero, nesciunt reprehenderit obcaecati vitae earum beatae adipisci molestias, aliquid sint totam vero accusantium ut fugiat doloremque nam, fuga vel at? Voluptates aspernatur natus sapiente, alias amet veritatis distinctio velit facilis? Enim animi nisi quasi illum vero, voluptatem dolor fuga reiciendis nostrum rerum eligendi magni earum rem officiis esse consequuntur quidem hic vel quisquam doloribus ipsa voluptatum veniam aliquid. Voluptatem accusamus, rem alias delectus nemo deleniti!
-            <br><br>
-        </div>
+
 
         <div class="contacto">
-            <h3>Aqui van fotos y link a página de Contacto</h3>
+            <h3>Contactate con nosotros</h3>
             <img src="images/promo.jpg" alt="Contacto">
             <br>
             <a href="contacto.html">VER MAS</a>
@@ -58,6 +143,7 @@
     <script src="js/footer.js"></script>
     <script src="js/script.js"></script>
     <script src="js/api.js"></script>
+    <script src="js/cabanas.js"></script>
     
 </body>
 </html>

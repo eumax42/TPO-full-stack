@@ -38,13 +38,14 @@ body{
 }
 
 .contenedor .menu{
-    background: rgb(255, 255, 255);
-    color: #000;
-    grid-area: menu; 
-    padding: 10px;
-    text-align: end;
-    padding-left: 10%;
-    letter-spacing: 0.1em;
+  background: rgb(255, 255, 255);
+  color: #000;
+  grid-area: menu; 
+  padding: 20px;
+  text-align: end;
+  padding-left: 2%;
+  padding-right: 0%;
+  letter-spacing: 0.1em;
 }
 
 .contenedor .presenta_1{
@@ -64,7 +65,7 @@ body{
 }
 
 .contenedor .cabañas{
-    background: rgb(82, 183, 214);
+  background: rgb(230, 240, 243);
     color: #000;
     grid-area: cabañas; 
     padding: 10px;
@@ -72,7 +73,7 @@ body{
 }
 
 .contenedor .entorno{
-    background: rgb(82, 183, 214);
+  background: rgb(230, 240, 243);
     color: #000;
     grid-area: entorno; 
     padding: 10px;
@@ -80,7 +81,7 @@ body{
 }
 
 .contenedor .contacto{
-    background: rgb(82, 183, 214);
+  background: rgb(230, 240, 243);
     color: #000;
     grid-area: contacto;
     padding: 10px;
