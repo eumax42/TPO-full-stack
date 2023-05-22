@@ -39,9 +39,10 @@ body{
     background: rgb(255, 255, 255);
     color: #000;
     grid-area: menu; 
-    padding: 10px;
+    padding: 20px;
     text-align: end;
-    padding-left: 10%;
+    padding-left: 2%;
+    padding-right: 0%;
     letter-spacing: 0.1em;
 }
 
@@ -102,7 +103,7 @@ body{
                              "menu menu menu"
                              "presenta_1 presenta_1 presenta_1"
                              "presenta_2 presenta_2 presenta_2"
-                             "contacto contacto contacto"
+                             "cabañas entorno contacto"
                              "pie pie pie";
     }
 }
@@ -113,6 +114,8 @@ body{
                              "menu menu menu"
                              "presenta_1 presenta_1 presenta_1"
                              "presenta_2 presenta_2 presenta_2"
+                             "cabañas cabañas cabañas"
+                             "entorno entorno entorno"
                              "contacto contacto contacto"
                              "pie pie pie";
     }

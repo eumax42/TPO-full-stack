@@ -12,6 +12,8 @@
     <script src="https://kit.fontawesome.com/8cf5f64ee2.js" crossorigin="anonymous"></script>
     <title>Colibrí Cabañas</title>
     <link rel="icon" href="images/Flat.png">
+    <!-- API -->
+    <link rel="stylesheet" href="css/api.css">
 
 </head>
 
@@ -99,30 +101,135 @@
                 entrada principal al pueblo, en medio de una reserva natural y a los pies de la Quebrada del
                 condorito</p>
             <br>
-            <br>
-
 
             <a href="https://www.instagram.com/" title="Instagram" target="_blank">
-                <i class="fa-brands fa-instagram" style="font-size: 20px; color: #4e7ac6;"> Instagram</i>
+                <i class="fa-brands fa-instagram" style="font-size: 15px; color: #4e7ac6;"> Instagram</i>
             </a>
             <br>
             <br>
-            <a href="https://wwww.facebook.com/" title="facebook" target="_blank">
-                <i class="fa-brands fa-facebook" style="font-size: 20px; color: #4e7ac6;"> facebook</i>
+                <i class="fa-brands fa-facebook" style="font-size: 15px; color: #4e7ac6;"> facebook</i>
             </a>
             <br>
             <br>
-            <i class="fa-brands fa-whatsapp" style="font-size: 20px ; color: #4e7ac6;"> +54 9 3547 571963</i>
+            <i class="fa-brands fa-whatsapp" style="font-size: 15px ; color: #4e7ac6;"> +54 9 3547 571963</i>
             <br>
             <br>
-            <i class="fa-solid fa-mobile-screen-button" style="font-size: 20px ; color: #4e7ac6;"> (03547) 467383</i>
+            <i class="fa-solid fa-mobile-screen-button" style="font-size: 15px ; color: #4e7ac6;"> (03547) 467383</i>
+            <br>
+            <br>
 
+
+            <!-- API de temperatura - INICIO-->
+            <div class="apicontainer">
+                <h3>Temperatura</h3>
+                <select name="Ciudad" id="Ciudad">
+                    <option value="Buenos Aires">
+                        Buenos Aires (Argentina)
+                    </option>
+
+                    <option value="Cordoba">
+                        Córdoba (Capital)
+                    </option>
+
+                    <option value="Mendoza">
+                        Mendoza (Capital)
+                    </option>
+
+                    <option value="La Plata">
+                        La Plata (Buenos Aires)
+                    </option>
+
+                    <option value="Rosario">
+                        Rosario (Santa Fe)
+                    </option>
+
+                    <option value="Salta">
+                        Salta (Capital)
+                    </option>
+
+                    <option value="San Miguel de Tucuman">
+                        San Miguel de Tucumán (Tucumán)
+                    </option>
+
+                    <option value="Mar del Plata">
+                        Mar del Plata (Buenos Aires)
+                    </option>
+
+                    <option value="Santa Fe">
+                        Santa Fe (Capital)
+                    </option>
+
+                    <option value="San Juan">
+                        San Juan (Capital)
+                    </option>
+
+                    <option value="Resistencia">
+                        Resistencia (Chaco)
+                    </option>
+
+                    <option value="Neuquen">
+                        Neuquén (Capital)
+                    </option>
+
+                    <option value="Posadas">
+                        Posadas (Misiones)
+                    </option>
+
+                    <option value="Parana">
+                        Paraná (Entre Ríos)
+                    </option>
+
+                    <option value="Formosa">
+                        Formosa (Capital)
+                    </option>
+
+                    <option value="San Salvador de Jujuy">
+                        San Salvador de Jujuy (Jujuy)
+                    </option>
+
+                    <option value="Santiago del Estero">
+                        Santiago del Estero (Capital)
+                    </option>
+
+                    <option value="Rio Gallegos">
+                        Río Gallegos (Santa Cruz)
+                    </option>
+
+                    <option value="Santa Rosa">
+                        Santa Rosa (La Pampa)
+                    </option>
+
+                    <option value="Rawson">
+                        Rawson (Chubut)
+                    </option>
+
+                    <option value="San Luis">
+                        San Luis (Capital)
+                    </option>
+
+                    <option value="La Rioja">
+                        La Rioja (Capital)
+                    </option>
+
+                    <option value="Rio Grande">
+                        Río Grande (Tierra del Fuego)
+                    </option>
+
+                    <option value="Ushuaia">
+                        Ushuaia (Tierra del Fuego)
+                    </option>
+                </select>
+                <br>
+                <br>
+                <h2 id="temp"> - </h2>
+            </div>
+            <!-- API de temperatura - FIN -->
         </div>
 
         <div class="mapa">
 
             <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2854.0472832361675!2d-64.62679744226058!3d-31.714438011825283!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x942d48d3ed8f4c67%3A0x9ae127d1709cd1d4!2sSan%20Clemente!5e0!3m2!1ses!2sar!4v1683635797541!5m2!1ses!2sar"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9572.680318818564!2d-64.56100388595962!3d-31.97571738288215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95d2b0447c2bd5ff%3A0x3245f2bd7c030f4c!2sPlaza%20Jose%20Hernandez!5e0!3m2!1ses-419!2sar!4v1684623376509!5m2!1ses-419!2sar"
                 width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
@@ -138,6 +245,7 @@
     <script src="js/footer.js"></script>
     <script src="js/script.js"></script>
     <script src="js/Formulario.js"></script>
+    <script src="js/api.js"></script>
 
 
 </body>
